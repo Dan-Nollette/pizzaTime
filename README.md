@@ -28,6 +28,14 @@ _If you'd like to report an error or just get in touch with the developer, pleas
 
 _This application uses HTML, CSS and JS, including use of Jquery and Bootstrap_
 
+## Plain English Spec
+### Behaviors
+_If no buttons are selected when form is submitted, page displays output for a large pizza with no added toppings._
+_If a size is selected on submit, page displays output(text regardless of price) for the corresponding size._
+_If a size is selected on submit, page displays output(text and price) for the corresponding size._
+_If a single topping is selected on submit, page displays output for the size as previously, plus the corresponding topping_
+_If multiple toppings are selected on submit, page displays output for the size as previously, plus the corresponding toppings_
+
 ### License
 
 *This code is licensed under the MIT License*
