@@ -1,7 +1,27 @@
 body {
-  background-image:  url("../img/cuttingBoard.jpg");
+  background-image:  url("http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-food-drinks-cocktails-cake-meat-pasta-pizza-awesome/z-wallpaper-delicious-pizza.jpg");
+  background-size: cover;
 }
 
 .jumbotron, .well {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 220, 163, 0.85 );
+  border: brown double 5px;
+}
+.jumbotron{
+  margin-top: 10%;
+}
+
+#output {
+  display: none;
+}
+h1, h2 {
+  text-align: center;
+}
+
+select {
+  margin-left: 43.5%
+}
+
+#submitButton {
+  background-color: lightgreen;
 }

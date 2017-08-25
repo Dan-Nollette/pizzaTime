@@ -42,6 +42,7 @@ $(document).ready(function(){
       toppings = $(".pieOptions input:checkbox:checked").map(function(){
         return $(this).val();
       }).get();
+      $("#output").show();
       $("#output").text(getPriceOutput(size, toppings));
   });
 });
