@@ -31,7 +31,7 @@ function getPriceOutput(size, toppings){
       }
     });
   }
-  return "Your " + currentPie.sizeName + " pizza with " + toppingsString + " will cost $" + currentPie.priceCalculator() + " ."
+  return "Your " + currentPie.sizeName + " pizza with " + toppingsString + " will cost $" + currentPie.priceCalculator();
 }
 
 $(document).ready(function(){

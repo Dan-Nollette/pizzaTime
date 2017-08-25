@@ -1,0 +1,7 @@
+body {
+  background-image:  url("../img/cuttingBoard.jpg");
+}
+
+.jumbotron, .well {
+  background: rgba(255, 255, 255, 0.7);
+}
