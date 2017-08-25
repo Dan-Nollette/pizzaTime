@@ -2,9 +2,9 @@ function Pizza(size, toppings){
   this.toppings = toppings;
   this.size = size;
   this.sizeName;
-  if (size === 1) {
+  if (size === 0) {
     this.sizeName = "small"
-  } else if (size === 2) {
+  } else if (size === 1) {
     this.sizeName = "medium"
   } else {
     this.sizeName = "large"
@@ -12,8 +12,9 @@ function Pizza(size, toppings){
 };
 
 Pizza.prototype.priceCalculator = function(){
-  var basePrice = 9.49 + (this.size * 3.5)
-  return basePrice + this.toppings.length *(2.25 + (this.size * .25));
+  var basePrice = 12.99 + (this.size * 3.5)
+  var totalprice = basePrice + this.toppings.length *(2.50 + (this.size * .25));
+  return (Math.round(totalprice * 100))/100;
 }
 
 function getPriceOutput(size, toppings){
@@ -42,6 +43,5 @@ $(document).ready(function(){
         return $(this).val();
       }).get();
       $("#output").text(getPriceOutput(size, toppings));
-
   });
 });
