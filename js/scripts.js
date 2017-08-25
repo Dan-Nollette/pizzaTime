@@ -14,7 +14,7 @@ function Pizza(size, toppings){
 Pizza.prototype.priceCalculator = function(){
   var basePrice = 12.99 + (this.size * 3.5)
   var totalprice = basePrice + this.toppings.length *(2.50 + (this.size * .25));
-  return (Math.round(totalprice * 100))/100;
+  return totalprice.toFixed(2);
 }
 
 function getPriceOutput(size, toppings){
