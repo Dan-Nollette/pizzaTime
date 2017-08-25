@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <link rel="manifest" href="manifest.json">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
@@ -15,43 +16,92 @@
         <h2>Order a hot, fresh pizza below and we'll tell you how much it'll set you back</h2>
       </div>
       <form class="pieOptions well" action="index.html" method="post">
+      <label for="sizes">Pizza Size</label>
       <select class="btn" id="sizes">
-        <option value="2">Large (17")</option>
+        <option name ="sizes value="2">Large (17")</option>
         <option value="1">Medium (13")</option>
         <option value="0">Small (11")</option>
       </select><br><br>
       <div class="row">
         <div class="col-md-2 form-group">
-          <input type="checkbox" class="btn" name="topping" value="Salami">Salami<br>
-          <input type="checkbox" class="btn" name="topping" value="Pepperoni">Pepperoni<br>
-          <input type="checkbox" class="btn" name="topping" value="Sausage">Sausage<br>
-          <input type="checkbox" class="btn" name="topping" value="Prosciutto" > Prosciutto<br>
-          <input type="checkbox" class="btn" name="topping" value="Marinated Chicken">Marinated Chicken<br>
-          <input type="checkbox" class="btn" name="topping" value="Jerk Chicken">Jerk Chicken<br>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Salami"> Salami<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Pepperoni"> Pepperoni<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Sausage"> Sausage<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Prosciutto"> Prosciutto<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Marinated Chicken"> Marinated Chicken<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Jerk Chicken"> Jerk Chicken<br>
+          </label>
         </div>
         <div class="col-md-3 form-group">
-          <input type="checkbox" class="btn" name="topping" value="Olives">Olives<br>
-          <input type="checkbox" class="btn" name="topping" value="Green Peppers">Green Peppers<br>
-          <input type="checkbox" class="btn" name="topping" value="Roasted Red Peppers">Roasted Red Peppers<br>
-          <input type="checkbox" class="btn" name="topping" value="Fresh White Onions">Fresh White Onions<br>
-          <input type="checkbox" class="btn" name="topping" value="Fresh Red Onions">Fresh Red Onions<br>
-          <input type="checkbox" class="btn" name="topping" value="Caramelized Sweet Onions">Caramelized Sweet Onions<br>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Olives"> Olives<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Green Peppers"> Green Peppers<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Roasted Red Peppers"> Roasted Red Peppers<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Fresh White Onions"> Fresh White Onions<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Fresh Red Onions"> Fresh Red Onions<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Caramelized Sweet Onions"> Caramelized Sweet Onions<br>
+          </label>
         </div>
         <div class="col-md-4 form-group">
-          <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Mozerella)">Extra Cheese (Mozerella)<br>
-          <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Fontina)">Extra Cheese (Fontina)<br>
-          <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Provolone/Mozerella)">Extra Cheese (Provolone/Mozerella)<br>
-          <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Parmigiano-Regianno)">Extra Cheese (Parmigiano-Regianno)<br>
-          <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Chevre)">Extra Cheese (Chevre<br>
-          <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Feta)">Extra Cheese (Feta)<br>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Mozerella)"> Extra Cheese (Mozerella)<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Fontina)"> Extra Cheese (Fontina)<br>
+          </label>
+          <label><input type="checkbox" class="btn" name="topping" value="Extra Cheese (Provolone/Mozerella)"> Extra Cheese (Provol
+            one/Mozerella)<br>
+          </label>
+          <label><input type="checkbox" class="btn" name="topping" value="Extra Cheese (Parmigiano-Regianno)"> Extra Cheese (Parmig
+            iano-Regianno)<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Chevre)"> Extra Cheese (Chevre<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Extra Cheese (Feta)"> Extra Cheese (Feta)<br>
+          </label>
         </div>
         <div class="col-md-3 form-group">
-          <input type="checkbox" class="btn" name="topping" value="Black Mission Figs">Black Mission Figs<br>
-          <input type="checkbox" class="btn" name="topping" value="Roasted Potatoes">Roasted Potatoes<br>
-          <input type="checkbox" class="btn" name="topping" value="Tuna">Tuna<br>
-          <input type="checkbox" class="btn" name="topping" value="Walnuts">Walnuts<br>
-          <input type="checkbox" class="btn" name="topping" value="Pear">Pear<br>
-          <input type="checkbox" class="btn" name="topping" value="Cured Pork Loin">Cured Pork Loin<br>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Black Mission Figs"> Black Mission Figs<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Roasted Potatoes"> Roasted Potatoes<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Tuna"> Tuna<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Walnuts"> Walnuts<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Sliced Pear"> Sliced Pear<br>
+          </label>
+          <label>
+            <input type="checkbox" class="btn" name="topping" value="Cured Pork Loin"> Cured Pork Loin<br>
+          </label>
         </div>
       </div>
       <input type="submit" class="btn" id="submitButton" value="Submit">
