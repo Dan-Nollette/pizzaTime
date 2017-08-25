@@ -1,3 +1,5 @@
+//Backend scripts (business logic)
+
 function Pizza(size, toppings){
   this.toppings = toppings;
   this.size = size;
@@ -33,7 +35,7 @@ function getPriceOutput(size, toppings){
   }
   return "Your " + currentPie.sizeName + " pizza with " + toppingsString + " will cost $" + currentPie.priceCalculator();
 }
-
+//frontend scripts (user interface logic)
 $(document).ready(function(){
   $("#submitButton").click(function(event){
       event.preventDefault();
