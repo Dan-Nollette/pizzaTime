@@ -19,18 +19,18 @@ Pizza.prototype.priceCalculator = function(){
 
 function getPriceOutput(size, toppings){
   currentPie = new Pizza(size, toppings);
-  console.log(currentPie.toppings);
-  newArray = [];
-  console.log(typeof newArray);
-  newArray = currentPie.toppings;
-  console.log(typeof newArray);
-  var toppingsString = newArray.reduce(function(total, topping, index){
-    if (index === currentPie.toppings.length -1) {
-      return total + ", and " + topping
-    } else {
-      return total + ", " + topping
-    }
-  });
+  var toppingsString;
+  if (currentPie.toppings.length === 0){
+    toppingsString = "no toppings";
+  } else {
+    toppingsString = currentPie.toppings.reduce(function(total, topping, index){
+      if (index === currentPie.toppings.length -1) {
+        return total + ", and " + topping
+      } else {
+        return total + ", " + topping
+      }
+    });
+  }
   return "Your " + currentPie.sizeName + " pizza with " + toppingsString + " will cost $" + currentPie.priceCalculator() + " ."
 }
 
