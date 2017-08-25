@@ -13,8 +13,8 @@ _This webpage allows you to enter the size of pizza you would like and view the 
 * _a terminal application_
 * _Any modern Web browser_
 
-### Instructions:
-_Just clone the repo from Github by running `git clone https://github.com/Dan-Nollette/pizzaTime` in your , then in the terminal run `open pizzaTime/index.html`_
+### Instructions:                                      
+_Just clone the repo from Github by running `git clone https://github.com/Dan-Nollette/pizzaTime.git` in your , then in the terminal run `open pizzaTime/index.html`_
 
 ## Known Bugs
 
